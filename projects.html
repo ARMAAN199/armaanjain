@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Armaan | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<!-- poppins -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<style>
+::-webkit-scrollbar {
+    width: 7px;
+}
+ ::-webkit-scrollbar-thumb {
+    background: rgba(178,121,216,.959);
+    border-radius: 12px;
+ }  
+::-webkit-scrollbar-track {
+        background: #2d1950;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.example2 .navbar-brand > img {
+  padding: 7px 15px;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+
+nav .navbar-nav li a{
+  color: white !important;
+  font-size: 2rem;
+  }
+nav {
+    padding: 1.5rem;
+}
+.nav-item {
+    border-bottom: 2px solid transparent;
+    transition:.5s linear;
+}
+.nav-item:hover {
+    border-bottom: 2px solid violet;
+}
+  .active2 a{
+  color: rgba(178,121,216,.959) !important;
+  }
+
+ img{
+     width: 100%;
+ } 
+
+ h1, h4{
+     font-size: 5rem;
+     color: rgba(178,121,216,.959);
+     /* color: rgb(84, 108, 155); */
+ }
+ h4{
+   font-size: 2rem;
+ }
+ button{
+        background-color:rgba(147,76,206,.3686274509803922);
+        border: none;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #fff;
+    }
+ #info{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 40px;
+    margin-right: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    color: white;
+}
+
+.arrow{
+    font-size: 100px;
+    color: rgba(178,121,216,.959);;
+}
+.footer {
+    background-color: #1e1331;
+    padding: 5px;
+    margin-top: 3rem;
+    text-align: center;
+}
+.footer p {
+    font-size: 1rem;
+} 
+.footer__name {
+    color: rgba(178,121,216,.959);
+    font-weight: bolder;
+}
+
+
+body {
+  font-family: "Lato";
+        overflow-y: scroll;
+}
+.svgimg {
+     padding: 4rem;
+  }
+#navdiv1{
+    border-bottom: 2px solid violet;
+}  
+@media only screen and (max-width: 1000px) {
+    #info{
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .information{
+        margin-right: 0%;
+        margin-left: 5%;
+    }
+    .svgimg{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5%;
+    }
+    h1{
+      font-size: 3rem;
+    }
+}
+</style>
+</head>
+<body>
+  <div id="particles-js"></div>
+    <div class="container example2">
+      <nav class="navbar navbar-default" style="background-color: transparent; border: none;">
+        <div class="container-fluid">
+          <div class="navbar-header" style="background-color: transparent;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html"><img src="./logo.png" alt="Dispute Bills">
+            </a>
+          </div>
+          <div id="navbar2" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active2 nav-item"><a href="./about.html">What I Do?</a></li>
+              <li class="nav-item"><a href="./certifications.html">Certifications</a></li>
+              <li class="nav-item" id="navdiv1"><a href="./projects.html">Work/Projects</a></li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+        <!--/.container-fluid -->
+      </nav>
+    </div>
+
+    <div class="container">
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6">
+            <div class="information">
+            <div class="information"> <h1>Work and Projects</h1></div>
+            <div id="info">
+            <p id="info">
+              My projects make use of vast variety of latest technological tools. I am a team guy and love to work and collaborate with other like minded people. Be it Software or Hardware. I'm always up for work.
+            </p>    
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-6 svgimg">
+            <img src="./undraw_programming_2svr.svg" alt="./3.svg">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+              <center><i class="fa fa-angle-down arrow" aria-hidden="true"></i></center> 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 whatido">
+            <center> <h1>Recent Projects</h1> </center>  
+            </div>
+        </div>
+
+
+        <div class="row" style="height: 100%; margin-top: 10%;">
+            <div class="col-sm-6">
+              <div class="information">
+              <div class="information"> <h1>Full-Stack Account Maintenance</h1>
+              <h1>Web-App</h1>
+              </div>
+              <div id="info">
+              <p id="info">
+                <li>Allows users to register their companies and clients on tha platform. One can maintain 2-way transactions and keep up Ledger updated. Every request is encrypted and accounts are 2-Step Authenticated.</li>
+                <li>Graphical Representation of Data aids users to fetch and understand data easily.</li>                
+              </p>    
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-6 svgimg">
+              <img src="./Group 1.png" alt="./3.svg">
+            </div>
+          </div>  
+ 
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6 svgimg">
+          <img style="width: 50%;" src="./Light Mode.svg" alt="./3.svg">
+        </div>      
+        <div class="col-sm-6">
+          <div class="information">
+          <div class="information"> <h1>Custom Music Player</h1></div>
+          <h1>Web-App</h1>
+          <div id="info">
+          <p id="info">
+            <li>Create an account to save your music library. Request for more music. Rate and share with your friends on the platform.</li>
+            <li>Copyrighted audio is played under Fair-use for educational purposes.</li>
+          </p>    
+          </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6">
+            <div class="information">
+            <div class="information"> <h1>Hotel Booking Template</h1></div>
+            <h1>Web-App</h1>
+            <div id="info">
+            <p id="info">
+              <li>A Demo hotel booking webpage. With payment gateaway interface.</li>
+              <li>I have several other similar templates that can be redesigned and published for professional use.</li>
+            </p>    
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-6 svgimg">
+            <img src="./Group 1 (1).png" alt="./3.svg">
+          </div>
+        </div>  
+        
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6 svgimg">
+          <img src="./image4-removebg-preview.png" alt="./3.svg"> 
+          <!-- <img style="width: 70%;" src="./image5.png" alt="./3.svg"> -->
+        </div>      
+        <div class="col-sm-6">
+          <div class="information">
+          <div class="information"> <h1>Elevator Model for Energy Conservation</h1></div>
+          <h1>Hardware Design</h1>          
+          <div id="info">
+          <p id="info">
+            <li>The subject matter of present disclosure relates to an elevator and more particularly to an
+              elevator with an arrangement of plurality of pulleys to reduce the power consumption by the
+              motor and/or the internal components of the car and the strain on the motor.</li>
+            <li>The re-design also focuses on improving cellular connectivity inside the elevator car</li>
+            <li>This design is currently under publishing stage of patent Application</li>  
+          </p>    
+          </div>
+          </div>
+        </div>
+        </div>  
+        
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6">
+            <div class="information">
+            <div class="information"> <h1>Personal Portfolio</h1></div>
+            <h1>Web</h1>
+            <div id="info">
+            <p id="info">
+              <li>My own Personal Portfolio</li>
+            </p>    
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-6 svgimg">
+            <img src="./macprofile.svg" alt="./3.svg" style="width: 60rem;">
+          </div>
+        </div>          
+
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6 svgimg">
+          <img src="./Group 1 (3).png" alt="./3.svg">
+        </div>      
+        <div class="col-sm-6">
+          <div class="information">
+          <div class="information"> <h1>Bookworm E-Journal</h1></div>
+          <h1>Full-stack Web App</h1>          
+          <div id="info">
+          <p id="info">
+            <li>Create an account and store your memories in our life-like journal.</li>
+            <li>Access/Update your data from anywhere securely.</li>
+            <li>Create Birthday reminders to-do lists within your book.</li>  
+          </p>    
+          </div>
+          </div>
+        </div>
+        </div> 
+
+        <div class="row" style="height: 100%; margin-top: 10%;">
+          <div class="col-sm-6">
+            <div class="information">
+            <div class="information"> <h1>Selenium Scripts</h1></div>
+            <h1>Web-Automation-Testing</h1>
+            <div id="info">
+            <p id="info">
+              <li>I write fun web-automation scripts in python also used for web testing.</li>
+              <li>These include automatic Whatsapp message sender, instagram photo liker</li>
+              <li>I also write scripts to autofill forms when needed.</li>
+            </p>    
+            </div>
+            </div>
+          </div>
+          <div class="col-sm-6 svgimg">
+            <img src="./python-logo@2x.png" alt="./3.svg">
+            <center><img style="width: 20%;" src="./selenium_logo_square_red.png" alt="./3.svg"></center>
+          </div>
+        </div>           
+        
+        <div class="row" style="height: 100%; margin-top: 10%;">  
+        <div class="col-12">
+          <h4 style="color: #c4b5e0;">I'm currently working on several other projects, and am interest to work with fellow developers. Interested to work together?</h4>
+          <center><a href="mailto:arman0432.cse19@chitkara.edu.in"><button>Contact Me</button></a>   </center>  
+        </div>
+        </div>            
+
+      </div>  
+ 
+      <footer class="footer">
+        <p>Made by <span class="footer__name">Armaan</span></p>
+    </footer>
+
+      <!-- Avishka Avishka  Avishka Avishka -->
+<!-- Avishka Avishka  Avishka Avishka -->
+<!-- Avishka Avishka  Avishka Avishka -->
+
+<!-- Avishka Avishka  Avishka Avishka -->
+<!-- Avishka Avishka  Avishka Avishka -->
+<!-- Avishka Avishka  Avishka Avishka -->
+
+
+
+
+
+    <!-- Avishka Avishka  Avishka Avishka -->
+    <!-- Avishka Avishka  Avishka Avishka -->
+
+
+    <!-- Avishka Avishka  Avishka Avishka -->
+    <!-- Avishka Avishka  Avishka Avishka -->
+                    
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="./particle.js"></script>
+
+</body>
+</html>
+
+
+        <!-- <div class="row">
+            <div class="col-12">
+              Empty div with padding
+            </div>
+        </div>  -->

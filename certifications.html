@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armaan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+::-webkit-scrollbar {
+    width: 7px;
+}
+ ::-webkit-scrollbar-thumb {
+    background: rgba(178,121,216,.959);
+    border-radius: 12px;
+ }  
+::-webkit-scrollbar-track {
+        background: #2d1950;
+}
+body {
+    background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+}
+/* hero section */
+.project__section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 7rem;
+}
+.project__section__img {
+    padding: 4rem ;
+}
+.project__section__img img {
+      width: 100%;
+}
+.project__section__content {
+    padding: 4rem 5rem;
+}
+.project__section__content h1 {
+    font-size: 3rem;
+    color: rgba(178,121,216,.959);
+}
+.project__section__content p {
+    font-size: 1.3rem;
+}
+/* cards */
+.project__heading {
+    color: rgba(178,121,216,.959);
+}
+.heading {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.row {
+    padding:3rem 2.5rem;
+}
+.card{
+    text-align: left;
+    margin: .5rem;
+    border-radius: 0 !important;
+    background-color: #2d1950;
+    box-shadow: rgba(255, 255, 255, 0.5) 5px 5px,rgba(255, 255, 255, 0.3)  10px 10px, rgb(255,255,255,0.1)  15px 15px;
+}
+.card-body h1 {
+    color: #fff;
+    font-size: 2rem;
+}
+p {
+    color: #fff;
+    font-size: 1rem;
+}
+.recent__projects {
+    margin: auto;
+    text-align: center !important;
+    padding-top: 2rem;
+}
+.btn{
+    background-color: rgba(178,121,216,.959);
+    text-decoration:none;
+    padding: .6rem 1.5rem;
+    color: #fff;
+    border-radius: 0;
+    float: right;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    
+}
+.more__projects {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin:1rem auto;
+    padding: 1rem;
+    background-color: rgba(178,121,216,.959);
+    width: 10rem;
+}
+.more__projects a {
+    text-decoration: none;
+    color: #fff;
+}
+/* footer */
+.footer {
+    background-color: #1e1331;
+    padding: 5px;
+    margin-top: 3rem;
+    text-align: center;
+}
+.footer p {
+    font-size: 1rem;
+} 
+.footer__name {
+    color: rgba(178,121,216,.959);
+    font-weight: bolder;
+}
+.logo a img{
+     width: 100%;
+ }
+ .nav-item a{
+     color: white;
+     text-decoration: none;
+     font-size: 1.3rem;
+     font-weight: 900;
+ }
+ .opennav{
+        display: none;
+        background-color: transparent;
+        color: rgba(178,121,216,.959);
+        border: 1px solid rgba(178,121,216,.959);
+        padding: 0%;
+        font-size: 2rem;
+    }
+.nav-item {
+    border-bottom: 2px solid transparent;
+    transition:.5s linear;
+    list-style: none;
+}
+.nav-item:hover , #navdiv1{
+    border-bottom: 2px solid violet;
+}
+.contnav{
+  margin-left: 5%;
+}
+#logo{
+  width: 20%;
+}
+@media only screen and (max-width: 1260px) {
+    .empty{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) {
+  .nav-item a{
+     font-size: 1rem;
+     font-weight: 700;
+    }
+    #logo{
+  width: 30%;
+}
+}
+@media only screen and (max-width: 1000px) {
+  .contnav{
+  margin-left: 0%;
+}
+#logo{
+  width: 40%;
+}
+}
+@media only screen and (max-width: 576px) {
+    #logo{
+     width: 20%;
+     padding-top: 0.3rem;
+    }
+    .opennav{
+        display: inline-flex;
+    }
+    .nav-item{
+        padding: 7px;
+        /* margin-left: -15%; */
+    }
+    /* .logo{
+        margin-left: -20%;
+    } */
+    .project__section {
+    padding-top: 0rem;
+    }
+    .nav-item a{
+     font-size: 0.8rem;
+     font-weight: 700;
+    }
+}
+
+</style>
+<body>
+    <div id="particles-js"></div>
+    <!-- navbar -->
+    <div class="container contnav">
+        <button class="opennav" style="position: absolute; left: 80%; width: 6%; top: 10%;border: none;background-color: rgba(147,76,206,.3686274509803922);height: 3rem;width: 2.8rem;"><i class="fa fa-bars" aria-hidden="true" style="text-align: center;position: relative;left: 20%;top: 14%;"></i></button>
+    <div class="row" style="height: 100%;">
+       <div class="col-sm-3">
+           <div id="logo" class="logo"><a href="./index.html"><img src="./logo.png" alt="LOGO"></a></div>
+       </div>
+            
+       <div class="col-sm-3 navdiv">
+           <li class="nav-item"><a href="./about.html">What I do?</a></li>          
+       </div>
+       <div class="col-sm-3 navdiv" >
+           <li class="nav-item" id="navdiv1"><a href="#">Certifications</a></li>          
+       </div>
+       <div class="col-sm-3 navdiv">
+           <li class="nav-item"><a href="./projects.html">Work/Projects</a></li>          
+       </div>     
+
+     </div>
+    </div> 
+    <!-- navbar ends -->
+    <div class="project__section row">
+        <div class="project__section__img col-sm-6" data-aos="zoom-out"><img src="./files.svg" alt="poroject svg"></div>
+        <div class="project__section__content col-sm-6">
+            <h1>Certifications</h1>
+            <p class="aos init" data-aos="zoom-in">I'm always learning. New techniques and technology excites me and I'm eager to learn everything there is to know about them.</p>
+
+        </div>
+    </div>
+
+ 
+      <!-- second row -->
+      <div class="recent__projects">
+        <h1 class="heading">My <span class="project__heading">Certifications</span></h1>
+        <!-- <p>Here are a few projects I've worked on recently</p> -->
+    </div>
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">JavaScript, jQuery, and JSON</h1>
+              <p class="card-text">University Of Michigan</p>
+              <a href="
+              https://www.coursera.org/account/accomplishments/certificate/4WQ4GQ7DRYJZ" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">AWS Fundamentals: Going Cloud-Native</h1>
+                <p class="card-text">Amazon Web Services</p>
+                <a href="
+                https://www.coursera.org/account/accomplishments/certificate/CR93PUUMKDY4" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Building Web Applications in PHP</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/KSJ5DX2LAHV8" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- 3rd row -->
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">The Bits and Bytes of Computer Networking</h1>
+              <p class="card-text">Google</p>
+              <a href="
+              https://www.coursera.org/account/accomplishments/certificate/LYHSEBSPBHLR" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Introduction to Structured Query Language (SQL)</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/N8PJWTB8SWKE" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Java Programming: Solving Problems with Software</h1>
+                <p class="card-text">Duke University</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/PX8Z5PSEU84E" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- 4th row -->
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Fundamentals of Network Communication</h1>
+              <p class="card-text">University of Colorado System</p>
+              <a href="https://www.coursera.org/account/accomplishments/certificate/8VERDLDXTSKH
+              " class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Interactivity with JavaScript</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/CS27SUP422WW" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Introduction to CSS3</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="
+                https://www.coursera.org/account/accomplishments/certificate/DGYMH6EW939M" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- 5th row -->
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Data Collection and Processing with Python</h1>
+              <p class="card-text">University ofMichigan</p>
+              <a href="https://www.coursera.org/account/accomplishments/certificate/PSYKGTD37Y7U" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Open Source Software Development Methods</h1>
+                <p class="card-text">The Linux Foundation</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/HB9PS5GATUXX" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Technical Support Fundamentals</h1>
+                <p class="card-text">Google</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/G9VTD23GLRKB" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+       <!-- 6th row -->
+       <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Python Classes and Inheritance</h1>
+              <p class="card-text">University ofMichigan</p>
+              <a href="https://www.coursera.org/account/accomplishments/certificate/C2BG9DDQRZNU" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Python Functions, Files, and Dictionaries</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/JVDXVPNVNCT6" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Python Project: pillow, tesseract, and opencv</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/EA7WTMK4QQA8" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+       <!-- 7th row -->
+       <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Programming for Everybody (Getting Started with Python)</h1>
+              <p class="card-text">University ofMichigan</p>
+              <a href="https://www.coursera.org/account/accomplishments/certificate/UTE2K5FCZUP9" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Introduction to Web Development</h1>
+                <p class="card-text">University of California, Davis</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/DKERMFPL9N8E" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Python Basics</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="
+                https://www.coursera.org/account/accomplishments/certificate/VWQMLQHLHN7T" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- 8th row -->
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Crash Course on Python</h1>
+              <p class="card-text">Google</p>
+              <a href="
+              https://www.coursera.org/account/accomplishments/certificate/8CQUQDZ97YAQ" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Programming Fundamentals</h1>
+                <p class="card-text">Duke University</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/CFLHTF3LRXSL" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Advanced Styling with Responsive Design</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/R9E2W58VWF4N" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+       <!-- spcialization -->
+       <div class="recent__projects">
+        <h1 class="heading">My <span class="project__heading">Specializations</span></h1>
+        <!-- <p>Here are a few projects I've worked on recently</p> -->
+    </div>
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Web Applications for Everybody</h1>
+              <p class="card-text">University Of Michigan</p>
+              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3N87V3H82757" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Web Design for Everybody: Basics of Web Development & Coding</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KXN5Q5S933NE" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Python 3 Programming</h1>
+                <p class="card-text">University of Michigan</p>
+                <a href="
+                https://www.coursera.org/account/accomplishments/specialization/certificate/ABA6ABXL5UTX" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- qwiklabs -->
+      <div class="recent__projects">
+        <h1 class="heading">Qwiklab <span class="project__heading">Skills</span></h1>
+        <!-- <p>Here are a few projects I've worked on recently</p> -->
+    </div>
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Deploy to Kubernetes in Google Cloud</h1>
+              <p class="card-text">Gcloud</p>
+              <a href="https://www.qwiklabs.com/public_profiles/9f6fa497-2cfe-46f0-80c0-a1721aa1d4bf" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Build and Secure Networks in Google Cloud</h1>
+                <p class="card-text">Gcloud</p>
+                <a href="https://www.qwiklabs.com/public_profiles/9f6fa497-2cfe-46f0-80c0-a1721aa1d4bf" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Deploy and Manage Cloud Environments with Google Cloud</h1>
+                <p class="card-text">Gcloud</p>
+                <a href="https://www.qwiklabs.com/public_profiles/9f6fa497-2cfe-46f0-80c0-a1721aa1d4bf" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- 2 -->
+      <div class="row project__cards">
+        <div class="col-md-4">
+          <div class="card aos init" data-aos="fade-right" data-aos-duration="500">
+            <div class="card-body">
+              <h1 class="card-title">Set Up and Configure a Cloud Environment in Google Cloud</h1>
+              <p class="card-text">Gcloud</p>
+              <a href="https://www.qwiklabs.com/public_profiles/9f6fa497-2cfe-46f0-80c0-a1721aa1d4bf" class="btn">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Perform Foundational Infrastructure Tasks in Google Cloud</h1>
+                <p class="card-text">Gcloud</p>
+                <a href="https://www.qwiklabs.com/public_profiles/9f6fa497-2cfe-46f0-80c0-a1721aa1d4bf" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card aos init" data-aos="fade-left" data-aos-duration="500">
+              <div class="card-body">
+                <h1 class="card-title">Create and Manage Cloud Resources</h1>
+                <p class="card-text">Gcloud</p>
+                <a href="https://www.qwiklabs.com/public_profiles/9f6fa497-2cfe-46f0-80c0-a1721aa1d4bf" class="btn">View Certificate</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- bootstrap cards -->
+   <div class="more__projects"><a href="#">More Projects</a></div>
+   <!-- footer -->
+   <footer class="footer">
+       <p>Made by <span class="footer__name">Armaan</span></p>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <script src="./particle.js"></script>
+   <script>
+    AOS.init({
+        offset: 400,
+        duration: 600,
+        easing: 'ease'
+    });
+    $(".opennav").click(function(){
+    $(".navdiv").fadeToggle(500);
+   })
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Armaan Jain</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Reenie+Beanie&family=Zeyada&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Scope+One&display=swap" rel="stylesheet">
+        <!-- poppins -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+          <!-- animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<style>
+    body{
+        background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+        font-family: 'Poppins', sans-serif;
+    }
+    .container > div{
+        display: inline;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        position: relative;
+        width : 15px;
+        height : 100%;
+    }
+    .container{
+        position: fixed;
+        height: 10%;
+    }
+    #top{
+        top:0;
+    }
+    #bottom{
+        bottom: 0;
+    }
+    .content{
+        position: fixed;
+        top: 12%;
+        width: 20%;
+    }
+    #h1{
+    /* font-family: 'Reenie Beanie', cursive; */
+    /* font-family: 'Dawning of a New Day', cursive; */
+    /* font-family: 'Reenie Beanie', cursive;
+     */
+    font-size: 5rem;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    }
+    #demo{
+        font-family: 'Cutive', serif;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+        color: #fff;
+        font-size: 3rem;
+        padding: 0;
+        margin: 0;
+    }
+    #type{
+        color: #c770f0;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    #changableText {
+        padding-top: 3rem;
+    }
+    .cont1{
+        width: 50%;
+        left: 5%;
+        padding:6rem 8rem;
+    }
+    #demo span {
+        color: #c770f0;
+    }
+    /*  4>2>5=3=7>>1=6 */
+    .cont2{
+        width: 45%; 
+        background-repeat:no-repeat;
+        height: 75%;
+        left: 50%;
+    }
+    img{
+        object-fit: fill;
+        padding:4rem 3rem;
+        width: 70%;
+    }
+    button{
+        background-color:rgba(147,76,206,.3686274509803922);
+        border: none;
+        margin-top: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #fff;
+    }
+    button:hover {
+        background-color: #623686;
+        font-weight: 700;
+    }
+    #btn2 {
+       margin-left: .7rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+        /* .content{
+        position:;
+        top: 12%;
+    } */
+        .cont2{
+        width: 100%; 
+        background-repeat:no-repeat;
+        height: 40%;
+        left: 0%;
+    }
+        .cont1{
+        width: 100%;
+        left: 0%;
+        z-index: 9999;
+        padding:3rem 0.1rem;
+    }
+    img{
+    opacity: 0.1 !important;
+    }
+  }
+  @media only screen and (max-height: 650px) {
+        /* .content{
+        position:;
+        top: 12%;
+    } */
+        .cont1{
+        padding:0.1rem 0.1rem;
+    }
+  }  
+
+ </style>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+<div class="container" id="top">
+</div>        
+
+<div class="content cont1">
+        <div id="h1" class="aos init aos animate" data-aos="fade-right" data-aos-duration="1000"> <strong>Hello.</strong></div>
+        <div id="demo">I'M <span>ARMAAN<span></span></div>
+        <div id="changableText"><span id="type"><span></span></div>
+        <a href="./about.html"><button>Know Me More</button></a>
+        <a href="mailto:arman0432.cse19@chitkara.edu.in"></a><button id="btn2">Contact Me</button></a>
+</div>
+<div class="content cont2">
+    <img src="./mainimg.svg" alt="./5.svg" class="aos animate" data-aos="zoom-in">
+</div>
+
+<div class="container bottom" id="bottom">
+</div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+
+
+function bars(){
+var no_of_divs = (($(window).width())/15)-2;
+const arr=[ "#8675a9","#ffe6e6","#6F2DA8", "#6f42c","#343a40","#ffe3fe","#b4aee8", "#2D383A" ]
+for(var i=1; i<=no_of_divs; i++)
+{
+$(".container").append('<div id="'+i+'"></div>') 
+//const randomColor = Math.floor(Math.random()*16777777).toString(16);
+const randomColor = arr[Math.floor(Math.random() * arr.length)];
+  $(".container :nth-child("+i+")").css({
+      "background-color" : randomColor ,
+  });
+//  $(".container :nth-child("+i+")").html(randomColor);
+}
+
+
+move = setInterval(function(){
+var origin = Math.floor(Math.random() * (no_of_divs)) + 1;
+var dest = Math.floor(Math.random() * (no_of_divs)) + 1;
+if(dest<origin)
+{
+var temp = dest;
+dest = origin;
+origin = temp;
+}
+var dist = (dest-origin)*15;
+    $(".container :nth-child("+origin+")").animate({'left' : "+="+dist+"px" , 'z-index': 3},300)
+    $(".container :nth-child("+origin+")").css('z-index' , 0);
+    $(".container :nth-child("+dest+")").animate({'left' : "-="+dist+"px" , 'z-index': 3},300)
+    $(".container :nth-child("+dest+")").css('z-index' , 0);
+}, 300);
+}
+
+bars();
+
+var txt_arr = [
+"A Web Developer.",
+"A Tech Enthusiast.",
+"A StartUp Owner.",
+"A Part-Time Teacher.",
+"An Iot Developer."
+]
+
+var j =0;
+var a= 0;
+function typeWriter2() {
+var txt = txt_arr[a];
+if (j < txt.length) {
+    document.getElementById("type").innerHTML += txt.charAt(j);
+     j++;
+     setTimeout(typeWriter2, 200);
+  }
+  else if(a<txt_arr.length-1){
+    ++a;
+    j=0;
+    document.getElementById("type").innerHTML = "";
+    typeWriter2();
+  }
+  else{
+      a=0;
+      j=0;
+      document.getElementById("type").innerHTML = "";
+    typeWriter2();  
+  }
+}
+typeWriter2();
+
+// function removetype(){
+//     console.log("in remove");
+//     var a = txt.length-1;
+//     if (a >= 0) {
+//     document.getElementById("type").innerHTML -= txt.charAt(a);
+//      a--;
+//      console.log("in remove r");
+//      setTimeout(removetype, 200);
+//   }
+// }
+
+
+var doit;
+window.onresize = function(){
+    $(".container").empty();
+    clearInterval(move);  
+  clearTimeout(doit);
+  doit = setTimeout(move, 100);
+  bars();
+};
+
+var doit2;
+setInterval(function(){
+    $(".container").empty();
+    clearInterval(move);  
+  clearTimeout(doit2);
+  doit = setTimeout(move, 100);
+  bars();
+},45000);
+
+</script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./particle.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 600,
+            easing: 'ease'
+        });
+    
+    </script>
+    </body>
+</html>
+
+
+
+<!-- 
+// $(document).ready(function() {
+    //     $(".container").children().css({
+    
+    //     })
+    // }); 
+
+
+
+// $(window).on("resize", ()=>{
+//     $(".container").empty();
+//     clearInterval(move);
+//     bars();
+// });
+-->
